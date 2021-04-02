@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes-core.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    
+    <style>
+        html, body, pre, code, kbd, samp {
+            font-family: 'Press Start 2P';
+        }
+    </style>
+</head>
+<body>
+    <div class="mainPage">
+        <div class="title">
+            <!-- <img src="./image/binh.png"> -->
+            <h3>BINH'S PORTFOLIO</h3>
+            <p>FULL STACK WEB DEVELOPER</p>
+        </div>
+        <div class="main">
+            <div class="about" onclick="pageLoad()">
+                <p>
+                    <i class="fas fa-caret-right" aria-hidden="true"></i>
+                    ABOUT ME
+                </p>
+                <!-- <button onclick="myFunction()">Click me</button>
+                <p id="demo"></p> -->
+            </div>
+            <div class="skill" onclick="pageLoad()">
+                <p>
+                    <i class="fas fa-caret-right" aria-hidden="true"></i>
+                    SKILL
+                </p>
+            </div>
+            <div class="work" onclick="pageLoad()">
+                <p>
+                    <i class="fas fa-caret-right" aria-hidden="true"></i>
+                    MY WORKS
+                </p>
+            </div>
+            <div class="contact" onclick="pageLoad()">
+                <p>
+                    <i class="fas fa-caret-right" aria-hidden="true"></i>
+                    CONTACT</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Make with <img class="heart" src="./image/icon_heart_2.png"> by <a href="">Nguyen Phuong Binh</a></p>
+        </div>
+    </div>
+
+<!-- ----------ABOUT PAGE---------- -->
+    <div class="aboutPage">
+        <div class="aboutTab">
+            <span id="close">&times</span>
+            <img src="http://res.cloudinary.com/adamlancon/image/upload/v1505344317/untitled_uevddf.svg" />
+            <img id="adam2" src="http://res.cloudinary.com/adamlancon/image/upload/v1506463808/untitled_11_zprmmk.svg" />
+            <p>Hello there! I'm Binh, currently trying to become a Full Stack Web Developer.
+                <br><u>PS: I love coding. Please hire me. :)</u>
+            </p>
+        </div>
+    </div>
+
+<!-- ----------SKILL PAGE---------- -->
+    <div class="skillPage">
+        <div class="skillTab">
+            <span class="close">&times</span>
+            <div class="skillWords">
+                <p>
+                    I'm no pro, but I know these languages quite good. I'm also trying to learn more about React by my self at the moment. Maybe i'll add it in here soon. :)
+                </p>
+            </div>
+            <div class="languages">
+                <img id="html" src="http://res.cloudinary.com/adamlancon/image/upload/v1506488892/html_8bit_kdr2jj.png">
+                <img id="css" src="http://res.cloudinary.com/adamlancon/image/upload/v1506488998/css_8bit_nblckk.png">
+                <img id="javascript" src="http://res.cloudinary.com/adamlancon/image/upload/v1506487779/html%205.png">
+                <img id="bootstrap" src="http://res.cloudinary.com/adamlancon/image/upload/v1506489839/bootstrap_8bit_o9wecm.png">
+                <!-- <img id="react" src="http://res.cloudinary.com/adamlancon/image/upload/v1506492098/react_8bit_sx7wq3.png"> -->
+            </div>
+        </div>
+    </div>
+
+<!-- ----------WORK PAGE---------- -->
+      <div class="workPage">
+        <div class="workTab">
+          <h1>MY PROJECTS</h1>
+          <span class="closer">&times</span>
+        <div class="first">  
+          <a href="http://www.cjslocalcuisine.com/" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1506550150/untitled_13_dwtlje.svg"></a>Restaurant Website
+          </div>
+          <div class="second">
+          <a href="https://codepen.io/AJLuigi09/full/dzKXga/" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1506550169/untitled_14_juave1.svg"></a>Calculator
+          </div>
+          <div class="third">
+          <a href="https://codepen.io/AJLuigi09/full/dNKqmd/" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1506550211/untitled_15_dh3j1b.svg"></a>Weather App
+          </div>
+          <div class="fourth">
+          <a href="https://codepen.io/AJLuigi09/full/GWjPpm/" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1506550238/untitled_16_z36tzz.svg"></a>Wikipedia API search bar
+          </div>
+          <div class="fifth">
+          <a href="#" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1505344317/untitled_uevddf.svg"></a>8-bit self-portrait
+          </div>
+          <div class="sixth">
+          <a href="https://codepen.io/AJLuigi09/full/ZLamYp/" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1506550258/untitled_17_pfa4iq.svg"></a>Jedi and Sith quote gen
+          </div>
+          <div class="seventh">
+          <a href="https://codepen.io/AJLuigi09/full/pRqLdy/" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1506550278/untitled_18_kez9uy.svg"></a>twitch.tv online offline
+          </div>
+          <div class="eighth">
+          <a href="#" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1506365854/untitled_6_ubbrnf.svg"></a>A little 8bit me
+          </div>
+          <div class="ninth">
+          <a href="#" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1505687761/untitled_1_svv0nx.svg"></a><br>Restaurant's logo
+          </div>
+        </div>
+      </div>
+
+<!-- ----------CONTACT PAGE---------- -->
+      <div class="contactPage">
+        <div class="contactTab">
+          <span class="closing">&times</span>
+          <div class="social">
+            
+          <div class="facebook">
+            <a href="https://www.facebook.com/adam.lancon" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1506577051/facebook_8bit_vfnqr1.png"></a>
+          </div>
+          <div class="twitter">
+            <a href="https://twitter.com/adam_lancon" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1506577068/twitter_8bit_hi9cqa.png"></a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/adam-lancon-aa5a60132/" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1506658863/linkedin_8bit_tx8ylz.png"></a>
+          </div>
+          <div class="codepen">
+            <a href="https://codepen.io/AJLuigi09/" target="blank"><img src="http://res.cloudinary.com/adamlancon/image/upload/v1506577045/codepen_8bit_i8sek6.png"></a></div>
+            <div class="github">
+              <a href="https://github.com/AJLuigi09" target="blank"> <img src="http://res.cloudinary.com/adamlancon/image/upload/v1506577056/github_8bit_yelotd.png">
+              </a>
+            </div>
+            </div>
+          <div class="words">
+            <p>If you are a potential client or employer then please feel free to contact me any time! Just make sure to include your name, your companies name, and what you're interested in. Thank you!!</p>
+          </div>
+          <div class="resume">
+            <a href="#">
+            <img src="http://res.cloudinary.com/adamlancon/image/upload/v1506665738/pdfclick_8bit_moptcq.png"></a><br>Resume
+            </div>
+          </div>
+        </div>
+
+
+</body>
+<script src="./main.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</html>

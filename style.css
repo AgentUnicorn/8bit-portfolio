@@ -1,0 +1,264 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+    background-image: url('./image/background-1.png');
+    background-repeat: no-repeat;
+}
+
+.title {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.main {
+    /* grid-area: 2/3/6/7; */
+    width: 100%;
+    height: 100%;
+    /* display: grid; */
+    font-size: 15px; 
+    padding-left: 40%;
+}
+
+.about, .skill, .work, .contact {
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+    text-align: left;
+}
+
+i {
+    margin-right: -5px;
+    color: transparent;
+}
+
+.about:hover > p, .skill:hover > p,
+.work:hover > p, .contact:hover >p {
+    color: #ea2c62;
+}
+
+.about:hover > p > i, .skill:hover > p > i,
+.work:hover > p > i, .contact:hover > p > i {
+    color: red;
+    font-size: 15px;
+    /* animation: blink 1s steps(2, end) infinite; */
+    font-size: 20px;
+}
+
+/* TEXT GRADIENT  */
+.title > h3 {
+    /* background-image: linear-gradient(#f14668,#ffd880,#6b011f,#290149); */
+    background: -webkit-linear-gradient(#ea2c62,#ff9a8c,#fad5ad,#adb36e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 72px;
+}
+
+.title > p {
+    font-size: 25px;
+    color: #ea2c62;
+    letter-spacing: 5px;
+    /* margin-top:-20px; */
+}
+
+/* ----------ABOUT---------- */
+.aboutPage {
+    display: none;
+}
+
+.aboutTab {
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1.5fr 1fr ;
+    color: white;
+    font-family: "Press Start 2P";
+}
+  
+.aboutTab > p {
+grid-area: 1/2/3/3;
+font-size: 14px;
+line-height: 125%;
+padding-top: 20%;
+}
+  
+.aboutTab > img {
+grid-area: 1/1/3/2;
+width: 200px;
+height: 200px;
+}
+  
+  
+#adam2 {
+animation: wind 0.5s cubic-bezier(1,0.5,0.5,1) infinite;
+}
+
+/* ----------SKILL---------- */
+.skillPage {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.skillTab {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr ;
+    color: white;
+    font-family: "Press Start 2P";
+}
+
+.skillWords {
+    grid-area: 1/1/4/2;
+    font-family: "Press Start 2P";
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+}
+
+.skillWords > p {
+    line-height: 130%;
+    text-align: center;
+}
+
+.languages > img {
+    width: 100px;
+    height: 120px;
+}
+  
+.skillTab > .close {
+    grid-area: 1/3/2/4;
+    justify-self: end;
+    font-family: "Press Start 2P";
+    color: red;
+    animation: blink 1s steps(2, end) infinite;
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.languages {
+    height: 100%;
+    width: 80%;
+    grid-area: 1/2/4/4;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    justify-self: center;
+    padding: 5%;
+}
+  
+#html {
+    grid-area: 1/1;
+}
+
+#css {
+    grid-area: 1/2;
+}
+
+#javascript {
+    grid-area: 1/3;
+}
+
+#bootstrap {
+    grid-area: 2/1;
+}
+  
+#react {
+    grid-area: 3/2;
+}
+
+/* ----------WORK---------- */
+.workPage {
+    display: none;
+}
+
+.workTab {
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1.5fr 1fr ;
+    color: white;
+    font-family: "Press Start 2P";
+}
+
+/* ----------CONTACT---------- */
+.contactPage {
+    display: none;
+}
+
+.contactTab {
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1.5fr 1fr ;
+    color: white;
+    font-family: "Press Start 2P";
+}
+
+#close {
+    font-size: 40px;
+    color: red;
+    animation: blink 1s steps(2, end) infinite;
+    /* grid-area: 1/3/2/4; */
+    justify-self: center;
+}
+
+/* FOOTER  */
+.heart {
+    height:30px;
+    width: 30px;
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer p a {
+    text-decoration: none;
+    color:#ea2c62;
+}
+
+.footer p a:hover {
+    color: red;
+}
+
+/* BLINK EFFECT */
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.title > h3 {
+    -webkit-animation: blink 3s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 3s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 3s;
+    -o-animation-iteration-count: infinite;
+}
+
