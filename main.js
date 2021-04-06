@@ -14,18 +14,18 @@ function pageLoad() {
           .delay(500)
           .fadeIn(700);
       });
-      // $(".work").click(function() {
-      //   $(".mainPage").fadeOut(500);
-      //   $(".workPage")
-      //     .delay(500)
-      //     .fadeIn(700);
-      // });
-      // $(".contact").click(function() {
-      //   $(".mainPage").fadeOut(500);
-      //   $(".contactPage")
-      //     .delay(500)
-      //     .fadeIn(700);
-      // });
+      $(".work").click(function() {
+        $(".mainPage").fadeOut(500);
+        $(".workPage")
+          .delay(500)
+          .fadeIn(700);
+      });
+      $(".contact").click(function() {
+        $(".mainPage").fadeOut(500);
+        $(".contactPage")
+          .delay(500)
+          .fadeIn(700);
+      });
       $("#close").click(function() {
         $(".aboutPage").slideUp(500);
         $(".mainPage")
