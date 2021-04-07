@@ -1,16 +1,18 @@
 body{
-    background-color: black;
     color: whitesmoke;
+    background-color: black;
     width: 100%;
     height: 400px;
     text-align: center;
     background-image: url('./image/background-1.png');
     background-repeat: no-repeat;
     background-position:center;
+    /* background-size: cover; */
+    height: 100%;
 }
 
 .mainPage {
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 
@@ -142,6 +144,20 @@ i {
     width: 100px;
     height: 120px;
 }
+
+.languages > img:hover{
+    animation: roll 2s infinite;
+    transform: rotate(30deg);
+}
+
+@keyframes roll {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   
 .skillTab > .close {
     grid-area: 1/3/2/4;
@@ -211,15 +227,17 @@ i {
 .workTab > div {
     height:60%;
     width: 70%;
-    border: solid white 3px;
+    border: solid #ea2c62 3px;
     background-color: black;
     font-size: 10px;
-    color: white;
+    color: #ea2c62;
     text-align: center;
 }
   
 .workTab > div:hover {
+    /* transform: rotate(360deg); */
     transform: scale(1.5);
+    transition: 0.5s ease-in-out 0s;
 }
   
 .workTab > div > a {
@@ -232,6 +250,11 @@ i {
 .workTab > div > a > img {
     height: 95%;
     width: 95%;
+    transition: all 1s ease-in-out 0s;
+}
+
+.workTab > div > a > img:hover {
+    transform: rotateY(360deg);
 }
 
 .workTab > div > p {
@@ -240,6 +263,16 @@ i {
   
 .first {
     grid-area:2/2/3/3;
+    justify-self: center;
+}
+
+.second {
+    grid-area:2/3/3/4;
+    justify-self: center;
+}
+  
+.third {
+    grid-area:2/4/3/5; 
     justify-self: center;
 }
   
